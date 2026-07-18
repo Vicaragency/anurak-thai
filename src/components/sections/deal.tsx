@@ -29,13 +29,19 @@ function DealBand() {
 export function Deal({
   validUntil = "19 juli",
   title = "WK deal",
+  showBand = true,
+  variant = "beige",
 }: {
   validUntil?: string;
   title?: string;
+  /** Toont de schuine roze "โปร / DEAL"-band boven de kaart. */
+  showBand?: boolean;
+  /** Achtergrond: "beige" (home) of "seigaiha" (wit patroon, zoals de menupagina). */
+  variant?: "beige" | "seigaiha";
 }) {
   return (
-    <section className="bg-beige">
-      <DealBand />
+    <section className={variant === "seigaiha" ? "bg-seigaiha" : "bg-beige"}>
+      {showBand ? <DealBand /> : null}
       <div className="mx-auto grid w-full max-w-[1120px] items-center gap-10 px-6 py-16 lg:grid-cols-2 lg:gap-16 lg:py-20">
         {/* Foto met sticker */}
         <div className="relative mx-auto w-full max-w-[440px] lg:mx-0">

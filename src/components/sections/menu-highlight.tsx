@@ -23,8 +23,8 @@ const SPECIALTIES = [
 
 export function MenuHighlight() {
   return (
-    <section className="relative overflow-hidden bg-gold-dark text-white">
-      {/* Maze-lijnpatroon (Figma "07") in de onderste helft, subtiel donkerrood. */}
+    <section className="relative overflow-hidden bg-gold text-white">
+      {/* Maze-lijnpatroon (Figma "07") in de onderste helft, tone-on-tone goud (#97700D). */}
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 bottom-0 top-[40%] rotate-180 bg-[length:100%_100%] bg-no-repeat"
