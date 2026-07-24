@@ -28,9 +28,11 @@ export const SITE = {
     countryCode: "BE",
     countryName: "België",
   },
-  /** Externe platforms. Vervang '#' door de echte URL's. */
-  reserveUrl: "#reserveren",
-  orderUrl: "#bestellen",
+  /** Externe platforms (openen in nieuw tabblad). */
+  // Reservaties via TableBooker (onderdeel van Zenchef-groep).
+  reserveUrl: "https://reservations.tablebooker.com/?restaurantId=34808064",
+  // Online bestellen (afhaal/bezorg) via orderticket.net-webshop.
+  orderUrl: "https://anurakthairoeselare.be/online-bestellen/",
   socials: {
     instagram: "https://instagram.com/",
     facebook: "https://www.facebook.com/anurakthai.roeselare/",
